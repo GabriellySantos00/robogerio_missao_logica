@@ -14,7 +14,7 @@
 #modal1,
 #modal2,
 #modal3 {
-      display: none;
+    display: none;
 
     width: min(96vw, 510px);
 
@@ -24,7 +24,8 @@
     padding: 20px;
 
     height: auto;
-    max-height: none; /* troca aqui */
+    max-height: none;
+    /* troca aqui */
 
     overflow: hidden;
 
@@ -65,7 +66,7 @@
     width: 100%;
     padding: 0;
     box-sizing: border-box;
-     overflow: visible;
+    overflow: visible;
 
 }
 
@@ -77,7 +78,7 @@
 
 
 .terminal-window {
-     background-color: #000;
+    background-color: #000;
     color: #0f0;
     font-family: 'Courier New', Courier, monospace;
     padding: 20px;
@@ -102,7 +103,7 @@
 }
 
 .terminal-body {
-     max-height: none;
+    max-height: none;
     overflow: visible;
     margin-bottom: 20px;
 }
@@ -114,7 +115,7 @@
 
 .prompt {
     margin-right: 8px;
-    white-space: normal;
+    white-space: nowrap;
     color: #0f0;
     font-size: 13px;
 }
