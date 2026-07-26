@@ -1,0 +1,394 @@
+@media (max-width: 1024px) {
+
+    .containerduasCaixas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerTecnica {
+
+        width: min(90vw, 630px);
+        margin-top: 20px;
+
+    }
+
+    .conteudoFinal {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .titulo1 {
+        font-size: 2rem;
+    }
+
+    #linha1,
+    #linha2,
+    #linha3 {
+        font-size: 1rem;
+    }
+
+    .containerCaixa {
+
+        width: 95%;
+        padding: 20px;
+
+    }
+
+    .codigo,
+    .codigo2 {
+
+        font-size: 12px;
+        overflow-x: auto;
+
+    }
+
+    #modal1,
+    #modal2,
+    #modal3 {
+        width: 95%;
+        padding: 15px;
+        max-height: 90vh;
+    }
+
+    .containerModal1 {
+        padding: 10px;
+    }
+
+    .terminal-window {
+        min-height: 180px;
+        padding: 15px;
+    }
+
+    .tituloModal1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        background-attachment: scroll;
+    }
+
+    .titulo1 {
+        font-size: 32px;
+        margin: 20px 10px;
+    }
+
+    #linha1,
+    #linha2,
+    #linha3 {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    header article {
+        width: 100%;
+    }
+
+    .caixa4 {
+        flex-direction: column;
+    }
+
+    .containerBotoes {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .botao {
+        width: 90px !important;
+        height: 46px;
+
+        font-size: 12px !important;
+        font-weight: bold;
+    }
+
+    main {
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .containerduasCaixas {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .containerTecnica {
+        width: 100%;
+        max-width: 360px;
+
+        padding: 16px;
+
+        margin-top: 12px;
+    }
+
+    .containerTecnica p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .summarypadrao {
+        font-size: 16px;
+    }
+
+    .titulo2 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .containerbaby {
+        width: 100%;
+    }
+
+    #modal1,
+    #modal2,
+    #modal3 {
+        width: 90%;
+        max-width: 360px;
+
+        margin: auto;
+        padding: 14px;
+
+
+        max-height: 70vh;
+
+        box-sizing: border-box;
+
+        border-radius: 12px;
+    }
+
+    .containerModal1 {
+        padding: 10px;
+    }
+
+    .tituloModal1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .containerModal1 p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .terminal-window {
+        width: 100%;
+        min-height: 200px;
+        padding: 12px;
+        font-size: 15px;
+
+        box-sizing: border-box;
+    }
+
+    .terminal-title {
+        font-size: 12px;
+    }
+
+    #terminal-input1,
+    #terminal-input2,
+    #terminal-input3 {
+        font-size: 15px;
+    }
+
+    .prompt {
+        font-size: 13px;
+    }
+
+    .codigo {
+        width: 100%;
+        font-size: 11.5px;
+
+        padding: 8px;
+
+        overflow-x: auto;
+        white-space: pre;
+
+        box-sizing: border-box;
+    }
+
+    .codigo2 {
+        font-size: 12px !important;
+        line-height: 1.35;
+
+        white-space: pre-wrap;
+        word-break: break-word;
+        overflow-x: auto;
+
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    .barra {
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    .botaoFechar {
+        margin-left: auto;
+        display: block;
+        font-size: 22px;
+    }
+
+    #botaoSeguinte1,
+    #botaoSeguinte2,
+    #botaoSeguinte3 {
+        width: 100%;
+    }
+
+    .caixaDuas4 {
+        padding: 20px;
+    }
+    
+    .conteudoFinal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .ladoEsquerdoFinal,
+    .ladoDireitoFinal {
+        width: 90%;
+    }
+
+    .robogerioGif {
+        width: 100px;
+        max-width: 80%;
+    }
+
+    .tituloFinal {
+        font-size: 1.8rem;
+    }
+
+    .subtituloFinal {
+        font-size: 1.1rem;
+    }
+
+    .ladoDireitoFinal h2 {
+        font-size: 1.4rem;
+    }
+
+    .ladoDireitoFinal p {
+        font-size: 0.95rem;
+    }
+
+    .habilidades {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .mensagemFinal {
+        text-align: center;
+        font-size: 0.9rem;
+        word-break: break-word;
+    }
+
+}
+
+
+@media (max-width:480px) {
+
+    .botao {
+
+        width: 95px;
+        height: 46px;
+
+        font-size: 14px;
+    }
+
+    .botao4 {
+
+        width: 120px;
+
+    }
+
+    img {
+
+        width: 120px;
+        height: 120px;
+
+    }
+
+    .ladoDireitoFinal {
+
+        width: 100%;
+        padding: 15px;
+
+    }
+
+    .ladoEsquerdoFinal {
+
+        width: 100%;
+
+    }
+
+    #modal1,
+    #modal2,
+    #modal3 {
+        width: calc(100vw - 20px);
+        padding: 12px;
+        max-height: 90vh;
+    }
+
+    .containerModal1 {
+        padding: 5px;
+    }
+
+    .tituloModal1 {
+        font-size: 20px;
+    }
+
+    .terminal-window {
+        min-height: 160px;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .terminal-title {
+        font-size: 12px;
+    }
+
+    .prompt {
+        font-size: 11px;
+    }
+
+    #terminal-input1,
+    #terminal-input2,
+    #terminal-input3 {
+        font-size: 12px;
+    }
+
+    .barra {
+        transform: scale(.9);
+        transform-origin: left;
+    }
+
+    .botaoFechar {
+        margin-left: auto;
+        display: block;
+        font-size: 22px;
+    }
+
+}

@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.668), rgba(0, 0, 0, 0.701)), url("/assets/img/fundo.gif") center center / cover fixed no-repeat;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    min-height: 100vh;
+
+}
+
+main {
+
+    min-height: calc(100vh - 190px);
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 20px;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo1 {
+
+    font-family: "Audiowide", sans-serif;
+    color: #63E7FF;
+    font-size: 3rem;
+
+    text-shadow:
+        0 0 10px #00d9ff,
+        0 0 20px rgba(0, 217, 255, .5);
+}
+
+#linha1,
+#linha2,
+#linha3 {
+    font-family: "Oxanium", sans-serif;
+    font-size: 1.3rem;
+    color: #A9C8D8;
+    text-align: center;
+    margin: 6px 0;
+}
+
+.titulo2 {
+    text-align: center;
+    color: #d4f5ff;
+    font-family: "Oxanium", sans-serif;
+    font-weight: 600;
+    font-size: clamp(22px, 3vh, 30px);
+    margin-top: clamp(10px, 2vh, 40px);
+}
+
+.tituloFinal {
+    font-family: "Oxanium", sans-serif;
+    color: rgb(202, 243, 255);
+    text-shadow: 0 0 14px #ceabe1;
+
+}
+
+.subtituloFinal {
+    font-family: "Oxanium", sans-serif;
+    color: #aec1e9;
+
+    text-shadow:
+        0 0 8px rgba(99, 231, 255, .6);
+
+}
+
+section {
+    padding: 10px
+}
+
+.containerCaixa {
+    width: min(90vw, 630px);
+    padding: clamp(12px, 2vw, 20px);
+
+    box-sizing: border-box;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    animation: surgirDoBotao .40s ease-out;
+}
+
+.caixa1 {
+    background: rgba(0, 20, 100, .252);
+    border: 1px solid #1366a185;
+    box-shadow: 0 0 20px rgba(2, 64, 108, .622);
+    transform-origin: top left;
+}
+
+
+.caixa2 {
+    background: rgba(40, 0, 67, .34);
+    border: 1px solid #5e1894c5;
+    box-shadow: 0 0 20px rgba(82, 27, 124, .595);
+    transform-origin: top center;
+}
+
+
+.caixa3 {
+    background: rgba(59, 1, 70, .27);
+    border: 1px solid #5e0d6e86;
+    box-shadow: 0 0 20px rgba(88, 5, 132, .464);
+    transform-origin: top right;
+}
+
+
+.caixa4 {
+    background: #8a35c224;
+    border: 1px solid #540d6e5e;
+    box-shadow: 0 0 20px rgba(88, 5, 132, .464);
+}
+
+.containerCaixa img {
+    display: block !important;
+    margin: 0 auto;
+}
+
+.containerCaixa p {
+    text-align: justify;
+}
+
+.tituloFinalContainer {
+    width: 100%;
+    text-align: center;
+}
+
+
+.conteudoFinal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.ladoEsquerdoFinal,
+.ladoDireitoFinal {
+    width: min(100%, 260px);
+}
+
+
+#caixaContainer1,
+#caixaContainer2,
+#caixaContainer3,
+#caixaContainer4 {
+    display: none;
+}
+
+.containerduasCaixas {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.containerTecnica {
+    width: min(90vw, 300px);
+
+    box-sizing: border-box;
+    font-family: "Oxanium", sans-serif;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    display: none;
+
+    color: #c2ffe6;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    animation: surgirDoBotao .40s ease-out;
+}
+
+.containerTecnica h3 {
+    font-family: "Oxanium", sans-serif;
+    color: #63E7FF;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.tecnica1 {
+    background: #0006439e;
+    transform-origin: top left;
+}
+
+
+.tecnica2 {
+    background: #36006c8a;
+    transform-origin: top center;
+}
+
+.tecnica3 {
+    background: #36024882;
+    transform-origin: top right;
+}
+
+p {
+    width: 100%;
+    max-width: 380px;
+    font-family: "Oxanium", sans-serif;
+
+    color: #dedbc2;
+    font-size: clamp(10px, 2vh, 20px);
+    margin: clamp(8px, 1.5vh, 15px) auto;
+}
+
+
+.containerTecnica p {
+    max-width: 255px;
+    font-size: 13.5px;
+    line-height: 1.4;
+}
+
+img {
+    width: clamp(100px, 30vw, 180px);
+    height: auto;
+
+    border-radius: 35%;
+    object-fit: cover;
+
+    transition: .3s;
+    filter: drop-shadow(0 0 15px #00d81936);
+}
+
+
+img:hover {
+    transform: scale(1.01);
+    filter: drop-shadow(0 0 14px #00d81967);
+
+}
+
+.paragrafo2 {
+    width: 80%;
+    max-width: 300px;
+    margin: 14.5px auto;
+    font-size: 14px;
+
+}
+
+.robogerioGif {
+    max-width: 110px;
+    max-height: 110px;
+}
+
+.ladoDireitoFinal {
+    width: 260px;
+
+    background: rgba(0, 30, 40, 0.55);
+    border: 1px solid #63E7FF;
+
+    border-radius: 15px;
+    padding: 20px;
+
+    box-shadow:
+        0 0 15px rgba(99, 231, 255, .35),
+        inset 0 0 15px rgba(99, 231, 255, .1);
+
+    font-family: "Oxanium", sans-serif;
+
+}
+
+.ladoDireitoFinal h2 {
+    color: #63E7FF;
+    text-align: center;
+
+    text-shadow:
+        0 0 10px #00d9ff;
+}
+
+.ladoDireitoFinal p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.ladoDireitoFinal h3 {
+    color: #fde69c;
+    text-align: center;
+}
+
+#linha1 {
+    min-height: 24px;
+}
+
+#linha2 {
+    opacity: 0;
+    transition: opacity .6s;
+}
+/* .mensagemFinal{
+    font-size: 1.5rem;
+} */

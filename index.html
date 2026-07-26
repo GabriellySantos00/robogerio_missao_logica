@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboQuest</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsividade.css">
+    <link rel="stylesheet" href="/assets/css/componentes.css">
+    <link rel="stylesheet" href="/assets/css/modais.css">
+    <link rel="stylesheet" href="/assets/css/animacoes.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo1" id="titulo">
+        </h1>
+        <h3 class="subtitulo1" id="linha1">
+        </h3>
+        <h3 class="subtitulo2" id="linha2">
+        </h3>
+        <h4 class="subtitulo3" id="linha3">
+        </h4>
+        <article id="botoes" class="containerBotoes">
+
+            <button class="botao botaoIf" id="botao1" onclick="mostrarCaixa(1)">
+                IF
+            </button>
+
+            <button class="botao botaoElseIf" id="botao2" onclick="mostrarCaixa(2)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 10V7C7 4.79 8.79 3 11 3H13C15.21 3 17 4.79 17 7V10" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" />
+                    <rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="2" />
+                </svg> ELSE IF
+            </button>
+
+            <button class="botao botaoElse" id="botao3" onclick="mostrarCaixa(3)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 10V7C7 4.79 8.79 3 11 3H13C15.21 3 17 4.79 17 7V10" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" />
+                    <rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="2" />
+                </svg> ELSE
+            </button>
+
+        </article>
+    </header>
+    <main>
+        <article class="containerduasCaixas caixaDuas1" id="caixaContainer1">
+            <div class="containerCaixa caixa1">
+                <h1 class="titulo2">
+                    O que é um If ?
+                </h1>
+                <p>
+                    Imagine que o Robogério precisa tomar uma decisão. O
+                    <strong>
+                        if
+                    </strong>
+                    serve justamente para
+                    isso!
+                </p>
+                <p>
+                    Ele verifica se uma condição é verdadeira.
+                    <strong>
+                        Se for, uma ação acontece.
+                    </strong>
+                </p>
+                <img alt="Representação do If" src="assets/img/imagem1.png" />
+                <div class="containerbaby">
+                    <p class="paragrafo2">
+                        Dito isso, ajude o Robogério a carregar a energia para ir a próxima
+                        condição
+                        :P
+                    </p>
+                    <button class="botao4" onclick="exercicioBotao(1)">
+                        Bora!
+                    </button>
+                </div>
+            </div>
+            <div class="containerTecnica tecnica1" id="caixinhaTecnica1">
+                <details class="explicacao1">
+                    <summary class="summarypadrao">
+                        Ver Explicação Técnica
+                    </summary>
+                    <p>
+                        O
+                        <strong>
+                            if
+                        </strong>
+                        é uma estrutura condicional usada para tomar decisões no código.
+                        Ele verifica se uma condição é verdadeira (
+                        <strong>
+                            true
+                        </strong>
+                        ) e, caso seja,
+                        executa o bloco de código que está dentro das chaves
+                        <strong>
+                            { }
+                        </strong>
+                        .
+                    </p>
+                    <h3>
+                        Exemplo:
+                    </h3>
+                    <pre class="codigo2">
+<span style="color:#ff00ff;">let</span> moedas = <span style="color:#00ffff;">7</span>;
+
+<span style="color:#ff00ff;">if</span> (moedas &lt; <span style="color:#00ffff;">5</span>) {
+    console.log(<span style="color:#fde69c;">"Faltam moedas"</span>);
+}
+</pre>
+                    <p>
+                        <br />
+                        <strong style="color: #0099ff;">
+                            if
+                        </strong>
+                        → significa "se". É o comando que inicia uma
+                        verificação.
+                    </p>
+                    <p>
+                        <strong style="color: #0099ff;">
+                            ( )
+                        </strong>
+                        → dentro dos parênteses fica a condição que será
+                        analisada pelo programa.
+                    </p>
+                    <p>
+                        <strong style="color: #0099ff;">
+                            &lt;
+                        </strong>
+                        → significa "menor que". Ele compara dois valores
+                        para verificar se a condição é verdadeira ou falsa.
+                    </p>
+                    <p>
+                        <strong style="color: #0099ff;">
+                            { }
+                        </strong>
+                        → indicam o bloco de código que será executado caso
+                        a condição seja
+                        verdadeira.
+                    </p>
+                </details>
+            </div>
+        </article>
+        <article class="containerduasCaixas caixaDuas2" id="caixaContainer2">
+            <article>
+                <div class="containerCaixa caixa2">
+                    <h1 class="titulo2">
+                        O que é um Else If ?
+                    </h1>
+                    <p>
+                        O
+                        <strong>
+                            else if
+                        </strong>
+                        é usado quando precisamos verificar uma nova condição
+                        caso a condição anterior do
+                        <strong>
+                            if
+                        </strong>
+                        seja falsa. Assim, podemos testar
+                        diferentes possibilidades e executar uma ação diferente para cada condição.
+                    </p>
+                    <img alt="Representação da estrutura else if" src="assets/img/imagem2.png" />
+                    <div class="containerbaby">
+                        <p class="paragrafo2">
+                            Dito isso, ajude o Robogério a carregar energia e seguir para a próxima condição. :P
+                        </p>
+                        <button class="botao4" onclick="exercicioBotao(2)">
+                            Bora!
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <div class="containerTecnica tecnica2" id="caixinhaTecnica2">
+                <details class="explicacao1">
+                    <summary class="summarypadrao">
+                        Ver Explicação Técnica
+                    </summary>
+                    <p>
+                        O
+                        <strong>
+                            else if
+                        </strong>
+                        é uma estrutura condicional usada para verificar uma
+                        nova condição quando a condição do
+                        <strong>
+                            if
+                        </strong>
+                        anterior é falsa.
+                        Se essa nova condição for verdadeira (
+                        <strong>
+                            true
+                        </strong>
+                        ), o bloco de código
+                        dentro das chaves
+                        <strong>
+                            { }
+                        </strong>
+                        será executado.
+                    </p>
+                    <h3>
+                        Exemplo:
+                    </h3>
+                    <pre class="codigo2">
+<span style="color:#ff00ff;">let</span> moedas = <span style="color:#00ffff;">7</span>;
+
+<span style="color:#ff00ff;">if</span> (moedas &lt; <span style="color:#00ffff;">5</span>) {
+    console.log(<span style="color:#fde69c;">"Poucas moedas"</span>);
+}
+<span style="color:#ff00ff;">else if</span> (moedas &lt; <span style="color:#00ffff;">10</span>) {
+    console.log(<span style="color:#fde69c;">"Quantidade média"</span>);
+}
+</pre>
+                    <p>
+                        <br />
+                        <strong style="color: #0099ff;">
+                            else if
+                        </strong>
+                        → significa "senão, se". Ele cria uma nova
+                        verificação caso o
+                        <strong>
+                            if
+                        </strong>
+                        anterior seja falso.
+                    </p>
+                    <p>
+                        <strong style="color: #0099ff;">
+                            ( )
+                        </strong>
+                        → dentro dos parênteses fica a nova condição que
+                        será analisada pelo programa.
+                    </p>
+                    <p>
+                        <strong style="color: #0099ff;">
+                            { }
+                        </strong>
+                        → indicam o bloco de código que será executado caso
+                        a condição do
+                        <strong>
+                            else if
+                        </strong>
+                        seja verdadeira.
+                    </p>
+                </details>
+            </div>
+        </article>
+        <article class="containerduasCaixas caixaDuas3" id="caixaContainer3">
+            <article>
+                <div class="containerCaixa caixa3">
+                    <h1 class="titulo2">
+                        O que é um Else ?
+                    </h1>
+                    <p>
+                        O
+                        <strong>
+                            else
+                        </strong>
+                        é usado para definir o que acontece quando a condição do
+                        <strong>
+                            if
+                        </strong>
+                        é falsa. Ou seja, se nenhuma das verificações anteriores for verdadeira, o
+                        código dentro do
+                        <strong>
+                            else
+                        </strong>
+                        será executado.
+                    </p>
+                    <img alt="Representação do If" src="assets/img/imagem3.png" />
+                    <div class="containerbaby">
+                        <p class="paragrafo2">
+                            Falta pouco! ajude o Robogério a carregar sua última carga de energia e
+                            concluir a jornada! :P
+                        </p>
+                        <button class="botao4" onclick="exercicioBotao(3)">
+                            Bora!
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <div class="containerTecnica tecnica3" id="caixinhaTecnica3">
+                <details class="explicacao1">
+                    <summary class="summarypadrao">
+                        Ver Explicação Técnica
+                    </summary>
+                    <p>
+                        O
+                        <strong>
+                            else
+                        </strong>
+                        é uma estrutura condicional usada para executar uma ação
+                        quando todas as condições anteriores forem falsas.
+                        Ou seja, se o
+                        <strong>
+                            if
+                        </strong>
+                        e o
+                        <strong>
+                            else if
+                        </strong>
+                        não forem verdadeiros,
+                        o bloco de código dentro das chaves
+                        <strong>
+                            { }
+                        </strong>
+                        do
+                        <strong>
+                            else
+                        </strong>
+                        será executado.
+                    </p>
+                    <h3>
+                        Exemplo:
+                    </h3>
+                    <pre class="codigo2">
+<span style="color:#ff00ff;">let</span> moedas = <span style="color:#00ffff;">7</span>;
+
+<span style="color:#ff00ff;">if</span> (moedas &lt; <span style="color:#00ffff;">5</span>) {
+    console.log(<span style="color:#fde69c;">"Poucas moedas"</span>);
+}
+<span style="color:#ff00ff;">else if</span> (moedas &lt; <span style="color:#00ffff;">10</span>) {
+    console.log(<span style="color:#fde69c;">"Quantidade média"</span>);
+}
+<span style="color:#ff00ff;">else</span> {
+    console.log(<span style="color:#fde69c;">"Muitas moedas"</span>);
+}
+</pre>
+                    <p>
+                        <br />
+                        <strong style="color: #0099ff;">
+                            else
+                        </strong>
+                        → significa "senão". Ele é executado
+                        quando nenhuma das condições anteriores forem verdadeiras.
+                    </p>
+                    <p>
+                        <strong style="color: #0099ff;">
+                            { }
+                        </strong>
+                        → indicam o bloco de código que será
+                        executado quando todas as condições anteriores forem falsas.
+                    </p>
+                    <p>
+                        <strong style="color: #0099ff;">
+                            else
+                        </strong>
+                        → não possui uma condição dentro dos
+                        parênteses
+                        <strong>
+                            ( )
+                        </strong>
+                        , pois ele representa o último caminho possível da decisão.
+                    </p>
+                </details>
+            </div>
+        </article>
+        <article class="containerduasCaixas caixaDuas4" id="caixaContainer4">
+            <div class="containerCaixa caixa4">
+                <div class="tituloFinalContainer">
+                    <h1 class="tituloFinal">
+                        ⋆ PARABÉNS!! ⋆
+                    </h1>
+                    <h3 class="subtituloFinal">
+                        Robogério foi restaurado!
+                    </h3>
+                </div>
+                <div class="conteudoFinal">
+                    <div class="ladoEsquerdoFinal">
+                        <img alt="Robogério Feliz" class="robogerioGif" src="assets/img/robogerio.gif" />
+                        <div class="containerbaby2">
+                            <p class="paragrafo2">
+                                <span style="color: #9cff7e;">
+                                    Robogério:
+                                </span>
+                                <br />
+                                Muito obrigado pela ajuda!
+                                Agora estou pronto para minha próxima aventura!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ladoDireitoFinal">
+                        <h2>
+                            Missão concluída
+                        </h2>
+                        <p>
+                            Robogério recuperou sua lógica e agora consegue tomar decisões sozinho.
+                        </p>
+                        <h3>
+                            Nesta missão você aprendeu:
+                        </h3>
+                        <div class="habilidades">
+                            <span>
+                                ✓ IF
+                            </span>
+                            <span>
+                                ✓ ELSE IF
+                            </span>
+                            <span>
+                                ✓ ELSE
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mensagemFinal">
+                    > missão_finalizada.exe
+                    <br />
+                    Continue estudando e desbloqueando novos conhecimentos!
+                </div>
+            </div>
+        </article>
+    </main>
+    <div class="modal-overlay" id="modalOverlay">
+        <dialog id="modal1">
+            <button class="botaoFechar" onclick="botaoFechar(1)">
+                x
+            </button>
+            <div class="containerModal1">
+                <h2 class="tituloModal1">
+                    Resolva:
+                </h2>
+                <p>
+                    O Robogério precisa de energia para continuar!
+                    Digite um valor e descubra se a condição será verdadeira.
+                </p>
+                <pre class="codigo">
+<span style="color:#ff00ff;">let</span> energia = <span style="color:#00ffff;"><span class="colornumero" style="color: red;">10</span></span>;
+
+<span style="color:#ff00ff;">if</span> (energia == <span style="color:#00ffff;">50</span>) {
+    console.log(<span style="color:#fde69c;">"Robogério pode continuar!"</span>);
+}
+</pre>
+                <div class="terminal-window">
+                    <div class="terminal-title">
+                        Terminal de Energia! Digite 'ajuda'.
+                    </div>
+                    <div class="terminal-body" id="terminal-body1">
+                    </div>
+                    <div class="input-line">
+                        <span class="prompt">
+                            robot@console:~$
+                        </span>
+                        <input autocomplete="off" autofocus="" id="terminal-input1" type="text" />
+                    </div>
+                    <div class="containerEnergia" id="containerEnergia1">
+                        <span class="prompt">
+                            Nível de Energia
+                        </span>
+                        <div class="barra" id="energiaBarra1">
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                        </div>
+                        <span id="porcentagem1">
+                            0%
+                        </span>
+                        <p id="mensagemEnergia1">
+                        </p>
+                        <button id="botaoSeguinte1" onclick="condicaoSeguinte(2)">
+                            CONTINUAR →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="modal2">
+            <button class="botaoFechar" onclick="botaoFechar(2)">
+                x
+            </button>
+            <div class="containerModal1">
+                <h2 class="tituloModal1">
+                    Resolva:
+                </h2>
+                <p>
+                    O Robogério precisa de energia para continuar!
+                    Digite um valor e descubra se a condição será verdadeira.
+                </p>
+                <pre class="codigo">
+<span style="color:#ff00ff;">let</span> energia = <span style="color:#00ffff;"><span class="colornumero" style="color: red;">10</span></span>;
+
+<span style="color:#ff00ff;">if</span> (energia == <span style="color:#00ffff;">50</span>) {
+    console.log(<span style="color:#fde69c;">"Tente outra vez!"</span>);
+}
+<span style="color:#ff00ff;">else if</span> (energia == <span style="color:#00ffff;">70</span>) {
+    console.log(<span style="color:#fde69c;">"Robogério pode continuar!"</span>);
+}
+</pre>
+                <div class="terminal-window">
+                    <div class="terminal-title">
+                        Terminal de Energia! Digite 'ajuda'.
+                    </div>
+                    <div class="terminal-body" id="terminal-body2">
+                    </div>
+                    <div class="input-line">
+                        <span class="prompt">
+                            robot@console:~$
+                        </span>
+                        <input autocomplete="off" autofocus="" id="terminal-input2" type="text" />
+                    </div>
+                    <div class="containerEnergia" id="containerEnergia2">
+                        <span class="prompt">
+                            Nível de Energia
+                        </span>
+                        <div class="barra" id="energiaBarra2">
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                        </div>
+                        <span id="porcentagem2">
+                            0%
+                        </span>
+                        <p id="mensagemEnergia2">
+                        </p>
+                        <button id="botaoSeguinte2" onclick="condicaoSeguinte(3)">
+                            CONTINUAR →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="modal3">
+            <button class="botaoFechar" onclick="botaoFechar(3)">
+                x
+            </button>
+            <div class="containerModal1">
+                <h2 class="tituloModal1">
+                    Resolva:
+                </h2>
+                <p>
+                    O Robogério precisa de energia para continuar!
+                    Digite um valor e descubra se a condição será verdadeira.
+                </p>
+                <pre class="codigo">
+<span style="color:#ff00ff;">let</span> energia = <span style="color:#00ffff;"><span class="colornumero" style="color: red;">10</span></span>;
+
+<span style="color:#ff00ff;">if</span> (energia == <span style="color:#00ffff;">50</span>) {
+    console.log(<span style="color:#fde69c;">"Tente outra vez!"</span>);
+}
+<span style="color:#ff00ff;">else if</span> (energia == <span style="color:#00ffff;">70</span>) {
+    console.log(<span style="color:#fde69c;">"Tente outra vez!"</span>);
+}
+<span style="color:#ff00ff;">else</span> {
+    console.log(<span style="color:#fde69c;">"Robogério pode continuar!"</span>);
+}
+</pre>
+                <div class="terminal-window">
+                    <div class="terminal-title">
+                        Terminal de Energia! Digite 'ajuda'.
+                    </div>
+                    <div class="terminal-body" id="terminal-body3">
+                    </div>
+                    <div class="input-line">
+                        <span class="prompt">
+                            robot@console:~$
+                        </span>
+                        <input autocomplete="off" autofocus="" id="terminal-input3" type="text" />
+                    </div>
+                    <div class="containerEnergia" id="containerEnergia3">
+                        <span class="prompt">
+                            Nível de Energia
+                        </span>
+                        <div class="barra" id="energiaBarra3">
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                            <span class="palito">
+                            </span>
+                        </div>
+                        <span id="porcentagem3">
+                            0%
+                        </span>
+                        <p id="mensagemEnergia3">
+                        </p>
+                        <button id="botaoSeguinte3" onclick="condicaoSeguinte(4)">
+                            FINALIZAR →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+    </div>
+    <footer>
+    </footer>
+</body>
+<script src="main.js">
+</script>
+
+</html>

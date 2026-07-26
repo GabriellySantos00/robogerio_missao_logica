@@ -1,0 +1,115 @@
+
+.erroSistema {
+    color: #f87878;
+    text-shadow:
+        0 0 6px #FF3131,
+        0 0 12px rgba(255, 49, 49, .5);
+}
+
+.sistemaRestaurado {
+    color: #63E7FF;
+    text-shadow:
+        0 0 6px #00d9ff,
+        0 0 12px rgba(0, 217, 255, .5);
+}
+
+
+#titulo {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: digitar 2s steps(12) forwards;
+}
+
+#titulo::after {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 1em;
+    background: #EAF7FF;
+    margin-left: 3px;
+    vertical-align: middle;
+    animation: cursor .8s infinite;
+}
+
+@keyframes desbloquear {
+    0% {
+        transform: scale(.9);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes surgirDoBotao {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(5px) scale(1.05);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes desbloquearBotao {
+
+    0% {
+        opacity: 0;
+        transform: translateY(15px) scale(.8);
+    }
+
+    70% {
+        transform: translateY(-5px) scale(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+@keyframes aparecerFinal {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cursor {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes digitar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 14ch;
+    }
+}
