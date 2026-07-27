@@ -1,11 +1,10 @@
 # Robogério - Missão de Condicionais
 
 <p align="center">
-  <img src="assets/img/robogerio.gif" width="800" alt="Demonstração do RoboGério">
+  <img src="assets/img/robogerio.gif" width="100" alt="Demonstração do RoboGério">
 </p>
 
 Um pequeno projeto criado durante meus estudos de lógica de programação para praticar estruturas condicionais em JavaScript.
-
 A ideia era transformar um exercício de programação em algo mais divertido, criando uma interface interativa onde o Robogério reage de acordo com as respostas do usuário.
 
 > Este é um projeto de estudos. O objetivo não foi desenvolver uma aplicação complexa, mas colocar em prática conceitos fundamentais de programação enquanto explorava HTML, CSS e JavaScript.»
@@ -40,4 +39,4 @@ A ideia era transformar um exercício de programação em algo mais divertido, c
 
 ## Acesse o Projeto
 
-[Projeto Online:](https://robogerioquest.vercel.app)
+> https://robogerioquest.vercel.app
