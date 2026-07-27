@@ -1,7 +1,7 @@
 # Robogério - Missão de Condicionais
 
 <p align="center">
-  <img src="assets/img/robogerio.gif" width="100" alt="Demonstração do RoboGério">
+  <img src="assets/img/robogerio.gif" width="800" alt="Demonstração do RoboGério">
 </p>
 
 Um pequeno projeto criado durante meus estudos de lógica de programação para praticar estruturas condicionais em JavaScript.
