@@ -26,7 +26,9 @@ A ideia era transformar um exercício de programação em algo mais divertido, c
 
 ## Demonstração
 
-![Demonstração do Projeto](./assets/img/demonstracao.gif)
+<p align="center">
+  <img src="assets/img/demonstracao.gif" width="500" alt="Demonstração do RoboGério">
+</p>
 
 ## Conceitos praticados
 
