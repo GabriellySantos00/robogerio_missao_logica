@@ -59,7 +59,7 @@ function carregarSistema() {
             clearInterval(animacao);
 
             linha1.innerHTML = '<span class="erroSistema">⚠ Sistema corrompido.</span>';
-            linha3.innerHTML = "Missão: restaure a Lógica do Robogério.<br> Treinando JavaScript.";
+            linha3.innerHTML = "Missão: Restaure a Lógica do Robogério.<br> Treinando JavaScript.";
 
 
             setTimeout(() => {
