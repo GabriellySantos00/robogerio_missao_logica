@@ -59,7 +59,7 @@ function carregarSistema() {
             clearInterval(animacao);
 
             linha1.innerHTML = '<span class="erroSistema">⚠ Sistema corrompido.</span>';
-            linha3.textContent = "Missão: restaure a lógica de Robogério.";
+            linha3.innerHTML = "Missão: restaure a Lógica do Robogério.<br> Treinando JavaScript.";
 
 
             setTimeout(() => {
@@ -158,7 +158,6 @@ function exercicioBotao(numero) {
 }
 
 
-
 function botaoFechar(numero) {
 
     let modalOverlay = document.getElementById("modalOverlay");
@@ -196,7 +195,7 @@ function botaoFechar(numero) {
 
 }
 
-// ------------------- TERMINAL
+
 
 let porcentagens = document.querySelectorAll("#porcentagem1, #porcentagem2, #porcentagem3");
 
